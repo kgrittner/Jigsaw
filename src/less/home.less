@@ -1,0 +1,182 @@
+
+
+#slider {
+  position: relative;
+}
+
+
+#home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 240px;
+  width:  100%;
+  //background-color: pink;
+
+}
+
+#home-content > div {
+  width: 915px;
+  height: 100%;
+  margin: auto;
+  //background-color: teal;
+}
+
+
+
+#home-content-container {
+  width: 800px;
+  height: 100%;
+  //background-color: teal;
+}
+
+#home-left {
+  float:left;
+  width: 450px;
+ // background-color: #0000cc;
+}
+
+#home-right {
+  float:left;
+  width: 445px;
+  //background-color: orange;
+}
+
+#home-right {
+  img {
+    height: 240px;
+  }
+}
+
+#home-left {
+  span {
+    display: block;
+  }
+  > span:first-child {
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+    font-family: @secondary-font;
+  }
+  > span:nth-child(2) {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: @secondary-font;
+    margin-top: -15px;
+    margin-left: 5px;
+  }
+  > span:nth-child(3) {
+    color: #bebdbd;
+    font-size: 12px;
+    font-family: @secondary-font;
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+
+  .pjbtn-inverse {
+    color: white;
+  }
+  .pjbtn-primary {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+#home-buttons button {
+  display: inline-block;
+  margin-top: 25px;
+}
+#home-buttons button:last-child {
+  margin-left: 10px;
+}
+
+
+
+@media (max-width: 1000px) {
+
+  #home-right {
+    width: 281px;
+  }
+
+  #home-right > img {
+    height: 150px;
+  }
+
+  #home-content > div {
+    width: 755px;
+  }
+
+  #home-left > span:first-child {
+    font-size: 46px;
+  }
+
+  #home-left > span:nth-child(2) {
+    font-size: 20px;
+  }
+
+  #home-left > span:nth-child(3) {
+    margin-top: 8px;
+  }
+
+}
+
+@media (max-width: 820px) {
+
+  #home-right {
+    width: 281px;
+    display: none;
+  }
+
+  #home-left {
+    float: none;
+    margin: auto;
+    width: 308px;
+  }
+
+  #home-spacer {
+    display: none;
+  }
+
+  #home-content > div {
+    //width: 339px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 820px) {
+
+  #home-buttons {
+    display: none;
+  }
+
+  #home-content {
+    height: 133px;
+  }
+
+
+}
+
+
+@media (max-width: 460px) {
+
+  #home-left > span:nth-child(3) {
+    display: none;
+  }
+
+  #home-content {
+    height: 86px;
+    text-align: center;
+  }
+
+  #home-content > div {
+    width: 100%;
+  }
+
+  #home-left {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,135 @@
+//
+// Header
+// --------------------------------------------------
+
+@text-color: #fff;
+
+
+// --------------------------------------------------
+// --- Header
+// --------------------------------------------------
+
+#navHome {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#header {
+  height: 80px;
+  background-color: @primary-color;
+  color: @text-color;
+  font-family: @primary-font;
+
+}
+
+#header > div{
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+
+// --------------------------------------------------
+// --- Logo
+// --------------------------------------------------
+#logo-container {
+  position: relative;
+  margin-top: 22px;
+  float:left;
+  height: 43px;
+  width: 200px;
+
+  //background-color: pink;
+}
+
+#logo-img {
+  position: absolute;
+  left: 25px;
+  top: 4px;
+  height: 17px;
+}
+
+#logo-title {
+  position: absolute;
+  left: 46px;
+  top: -5px;
+  font-size: 25px;
+}
+
+#logo-slogan {
+  position: absolute;
+  left: 12px;
+  top: 20px;
+  font-size: 10px;
+}
+
+
+// --------------------------------------------------
+// --- Nav
+// --------------------------------------------------
+#nav {
+  position: relative;
+  margin-top: 32px;
+  float:right;
+  height: 23px;
+  width: 499px;
+
+  //background-color: pink;
+}
+
+#nav > ul {
+  list-style-type: none;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#nav > ul > li {
+  display: inline;
+  margin-right: 30px;
+}
+
+#nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+#nav > ul > li a.active {
+  border-bottom: 1px solid;
+}
+
+#nav > ul > li:last-child {
+  display: inline;
+  margin-right: 0px;
+}
+
+#nav > ul > li:hover {
+  cursor: pointer;
+  border-bottom: 1px solid;
+}
+
+// --------------------------------------------------
+// --- Hamburger
+// --------------------------------------------------
+#navHamburger {
+  display: none;
+  position: absolute;
+  top: 26px;
+  right: 25px;
+}
+
+
+
+@media (max-width: 746px) {
+  #nav {
+    display: none;
+  }
+
+  #navHamburger {
+    display: block;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,46 @@
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import 'less/mixin/main';
+@import 'less/mixin/navSlideout';
+@import 'less/mixin/preLoader';
+@import 'less/mixin/heading';
+@import 'less/mixin/heading-inverse';
+@import 'less/mixin/buttons';
+
+@import 'less/header';
+@import 'less/home';
+@import 'less/ourServices';
+@import 'less/portfolio';
+@import 'less/ourTeam';
+@import 'less/blog';
+@import 'less/contact';
+@import 'less/footer';
+
+
+@primary-color: #ff5959;
+@primary-gray: #e8e8e8;
+@primary-font: 'Quicksand', sans-serif;
+
+@secondary-font: 'Droid Sans', sans-serif;
+
+body {
+  position:relative;
+  padding-top: 80px;
+  font-family: @primary-font;
+}
+
+main > section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: @primary-gray;
+}
+
+
+.color-inverse {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: @primary-color;
+  color: white;
+}
+
