@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <title>Jigsaw Sample</title>
+    <link rel="stylesheet" href="src/vendor/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="src/vendor/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="src/vendor/css/hamburger-vendor.css"/>
+    <link rel="stylesheet" href="src/app.css"/>
+    <!--<link rel="stylesheet" href="src/vendor/css/pre-loader.css"/>-->
+
+
+</head>
+<body >
+
+
+<!--Pre Loader Spinner-->
+<div id="loader">
+    <div class="spinner-wrapper">
+        <span class="spinner-text">ProJex</span>
+        <span class="spinner"></span>
+    </div>
+</div>
+
+
+
+
+
+
+<div>
+
+<!-- Header -->
+<header id="header" class="navbar-fixed-top">
+    <div class="container">
+
+        <!-- Logo -->
+        <section id="logo-container" style="">
+            <!-- TODO: Remove dropshadow from img and make it white -->
+            <img id="logo-img" src="src/img/logo.png" alt="Projex Logo"/>
+            <div id="logo-title"><span>Pro</span>Jex</div>
+            <div id="logo-slogan">One Page Business Theme</div>
+        </section>
+
+        <!-- Nav -->
+        <nav id="nav">
+
+            <ul>
+                <li><a class="active" href="#navHome">Home</a></li>
+                <li><a href="#navServices">Services</a></li>
+                <li><a href="#navPortfolio">Portfolio</a></li>
+                <li><a href="#navOurTeam">Our Team</a></li>
+                <li><a href="#navBlog">Blog</a></li>
+                <li><a href="#navContactUs">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div id="navHamburger">
+            <button id="btnNavHamburger" class="cmn-toggle-switch cmn-toggle-switch__htla">
+                <span>toggle menu</span>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- Header Home -->
+    <section id="navHome">
+        <div id="slider">
+            <img id="sliderImg" class="img-responsive"  src="src/img/crp4.jpg" alt="Corporate Header"/>
+
+            <div id="home-content">
+                <div>
+                    <div id="home-left">
+                        <span>ONE PAGE</span>
+                        <span>IS ALL THAT YOU NEED</span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elitconsectetur adipisicing elitconsectetur adipisicing elit. Delectus dolor dolores
+                        </span>
+
+                        <div id="home-buttons">
+                            <button class="pjbtn pjbtn-primary">OUR TEAM</button>
+                            <button class="pjbtn pjbtn-inverse">CONTACT US</button>
+                        </div>
+                    </div>
+
+
+                    <div id="home-spacer" style="width: 20px; height: 100px; float:left"></div>
+
+                    <div id="home-right">
+                        <img class="img-responsive" src="src/img/mini.png" alt="mini"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="navServices">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="heading">
+                Our Services
+                <div class="heading-line">
+                    <span></span>
+                    <span class="heading-circle"></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- HTML5 -->
+                    <div class="col-md-4 service-center">
+                        <img class="img-responsive" src="src/img/lightbulb.png" alt="Html5 and CSS3"/>
+                        <span class="service-title">HTML 5 &amp; CSS3</span>
+                        <span class="service-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam eaque eligendi minus natus nesciunt, non porro quis quod sit tenetur veniam. Deserunt in, laudantium nobis quidem repudiandae rerum!
+                        </span>
+                    </div>
+
+                    <div class="col-md-4 service-center">
+                        <img class="img-responsive" src="src/img/seo.png" alt="SEO"/>
+                        <span class="service-title">SEO Optimization</span>
+                        <span class="service-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam eaque eligendi minus natus nesciunt, non porro quis quod sit tenetur veniam. Deserunt in, laudantium nobis quidem repudiandae rerum!
+                        </span>
+                    </div>
+
+                    <div class="col-md-4 service-center">
+                        <img class="img-responsive" src="src/img/graphicDesign.png" alt="Graphic Design"/>
+                        <span class="service-title">Graphic Design</span>
+                        <span class="service-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam eaque eligendi minus natus nesciunt, non porro quis quod sit tenetur veniam. Deserunt in, laudantium nobis quidem repudiandae rerum!
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="navPortfolio" class="color-inverse">
+        <div class="container heading-inverse">
+
+            <!-- Heading -->
+            <div class="heading">
+                Our Portfolio
+                <div class="heading-line">
+                    <span></span>
+                    <span  class="heading-circle"></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Large -->
+            <div id="portfolio-lg-cont" class="row">
+                <div  class="col-md-12">
+
+                    <div class="col-md-6">
+                        <img class="img-responsive" src="src/img/gal1.jpg" alt="pic1"/>
+                    </div>
+
+                    <div  class="col-md-6">
+                        <img class="img-responsive" src="src/img/gal2.jpg" alt="pic2"/>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Small -->
+            <div class="row">
+                <div id="portfolio-sm-cont" class="col-md-12">
+
+                    <div class="col-md-3">
+                        <img class="img-responsive" src="src/img/gal3.jpg" alt="pic3"/>
+                    </div>
+
+                    <div  class="col-md-3">
+                        <img class="img-responsive" src="src/img/gal4.jpg" alt="pic4"/>
+                    </div>
+
+                    <div  class="col-md-3">
+                        <img class="img-responsive" src="src/img/gal3.jpg" alt="pic3"/>
+                    </div>
+
+                    <div  class="col-md-3">
+                        <img class="img-responsive" src="src/img/gal5.jpg" alt="pic5"/>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Our Team -->
+    <section id="navOurTeam">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="heading">
+                Our Wonderful Team
+                <div class="heading-line">
+                    <span></span>
+                    <span class="heading-circle"></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Individual Team Members -->
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- TODO: Add special char to name -->
+                    <!-- George Sjostedt -->
+                    <div class="team-container col-md-3">
+                        <img class="team-img img-responsive" src="src/img/norris.jpg" alt="Chuck Norris"/>
+                        <span class="team-name">George Sjostedt</span>
+                        <span class="team-job">CEO / Founder</span>
+                        <span class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa eaque earum illum in ipsum laudantium magni maiores.</span>
+
+                        <div class="team-social">
+                            <a href="#"><img src="src/img/twitter.png" alt="twitter"/></a>
+                            <a href="#"><img src="src/img/instagram.png" alt="instagram"/></a>
+                            <a href="#"><img src="src/img/fb.png" alt="facebook"/></a>
+                            <a href="#"><img src="src/img/gp.png" alt="google plus"/></a>
+                            <a href="#"><img src="src/img/linkedin.png" alt="linkedin"/></a>
+                        </div>
+                    </div>
+
+                    <!-- Dan Aase -->
+                    <div class="team-container col-md-3">
+                        <img class="team-img img-responsive" src="src/img/norris.jpg" alt="Chuck Norris"/>
+                        <span class="team-name">Dan Aase</span>
+                        <span class="team-job">CEO / Founder</span>
+                        <span class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa eaque earum illum in ipsum laudantium magni maiores.</span>
+
+                        <div class="team-social">
+                            <a href="#"><img src="src/img/twitter.png" alt="twitter"/></a>
+                            <a href="#"><img src="src/img/instagram.png" alt="instagram"/></a>
+                            <a href="#"><img src="src/img/fb.png" alt="facebook"/></a>
+                            <a href="#"><img src="src/img/gp.png" alt="google plus"/></a>
+                            <a href="#"><img src="src/img/linkedin.png" alt="linkedin"/></a>
+                        </div>
+                    </div>
+
+                    <!-- Kenneth Eriksson -->
+                    <div class="team-container col-md-3">
+                        <img class="team-img img-responsive" src="src/img/norris.jpg" alt="Chuck Norris"/>
+                        <span class="team-name">Kenneth Eriksson</span>
+                        <span class="team-job">CEO / Founder</span>
+                        <span class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa eaque earum illum in ipsum laudantium magni maiores.</span>
+
+                        <div class="team-social">
+                            <a href="#"><img src="src/img/twitter.png" alt="twitter"/></a>
+                            <a href="#"><img src="src/img/instagram.png" alt="instagram"/></a>
+                            <a href="#"><img src="src/img/fb.png" alt="facebook"/></a>
+                            <a href="#"><img src="src/img/gp.png" alt="google plus"/></a>
+                            <a href="#"><img src="src/img/linkedin.png" alt="linkedin"/></a>
+                        </div>
+                    </div>
+
+                    <!-- Christian Caceres -->
+                    <div class="team-container col-md-3">
+                        <img class="team-img img-responsive" src="src/img/norris.jpg" alt="Chuck Norris"/>
+                        <span class="team-name">Christian Caceres</span>
+                        <span class="team-job">CEO / Founder</span>
+                        <span class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa eaque earum illum in ipsum laudantium magni maiores.</span>
+
+                        <div class="team-social">
+                            <a href="#"><img src="src/img/twitter.png" alt="twitter"/></a>
+                            <a href="#"><img src="src/img/instagram.png" alt="instagram"/></a>
+                            <a href="#"><img src="src/img/fb.png" alt="facebook"/></a>
+                            <a href="#"><img src="src/img/gp.png" alt="google plus"/></a>
+                            <a href="#"><img src="src/img/linkedin.png" alt="linkedin"/></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section id="navBlog" class="color-inverse">
+        <div class="container heading-inverse">
+
+            <!-- Heading -->
+            <div class="heading">
+                The Latest News
+                <div class="heading-line">
+                    <span></span>
+                    <span class="heading-circle"></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- News 1 -->
+                    <div class="news-container col-md-4">
+
+                    <!-- Image -->
+                    <img class="img-responsive" src="src/img/news.jpg" alt="News1"/>
+
+                    <!-- Title -->
+                    <span class="news-title">Theme HotelDeluxe Released</span>
+
+                    <!-- Date -->
+                    <div class="news-date">
+                        <i class="fa fa-calendar"></i>
+                        <span>15th September, 2014</span>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="news-text">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam culpa delectus eligendi eveniet explicabo fugit, ipsam iure magni modi neque nostrum officiis quos rerum suscipit tempore totam. Aut, fuga!</span>
+                    </div>
+
+                    <!-- Person / Comments -->
+                    <div class="news-extra">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-user"></span>
+                            <span class="news-person">Dan Aase</span>
+                        </a>
+
+                        <a href="#">
+                            <i class="fa fa-comments-o"></i>
+                            <span class="news-comments">Comments</span>
+                        </a>
+                    </div>
+                </div>
+
+                    <!-- News 2 -->
+                    <div class="news-container col-md-4">
+
+                    <!-- Image -->
+                    <img class="img-responsive" src="src/img/news.jpg" alt="News1"/>
+
+                    <!-- Title -->
+                    <span class="news-title">Theme HotelDeluxe Released</span>
+
+                    <!-- Date -->
+                    <div class="news-date">
+                        <i class="fa fa-calendar"></i>
+                        <span>15th September, 2014</span>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="news-text">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam culpa delectus eligendi eveniet explicabo fugit, ipsam iure magni modi neque nostrum officiis quos rerum suscipit tempore totam. Aut, fuga!</span>
+                    </div>
+
+                    <!-- Person / Comments -->
+                     <div class="news-extra">
+                          <a href="#">
+                              <span class="glyphicon glyphicon-user"></span>
+                              <span class="news-person">Dan Aase</span>
+                          </a>
+
+                          <a href="#">
+                              <i class="fa fa-comments-o"></i>
+                              <span class="news-comments">Comments</span>
+                          </a>
+                      </div>
+                </div>
+
+                    <!-- News 3 -->
+                    <div class="news-container col-md-4">
+
+                    <!-- Image -->
+                    <img class="img-responsive" src="src/img/news.jpg" alt="News1"/>
+
+                    <!-- Title -->
+                    <span class="news-title">Theme HotelDeluxe Released</span>
+
+                    <!-- Date -->
+                    <div class="news-date">
+                        <i class="fa fa-calendar"></i>
+                        <span>15th September, 2014</span>
+                    </div>
+
+                    <!-- Text -->
+                    <div class="news-text">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam culpa delectus eligendi eveniet explicabo fugit, ipsam iure magni modi neque nostrum officiis quos rerum suscipit tempore totam. Aut, fuga!</span>
+                    </div>
+
+                    <!-- Person / Comments -->
+                        <div class="news-extra">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <span class="news-person">Dan Aase</span>
+                            </a>
+
+                            <a href="#">
+                                <i class="fa fa-comments-o"></i>
+                                <span class="news-comments">Comments</span>
+                            </a>
+                        </div>
+                </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="navContactUs">
+        <div class="container">
+
+            <!-- Heading -->
+            <div class="heading">
+                Contact Us
+                <div class="heading-line">
+                    <span></span>
+                    <span class="heading-circle"></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <form action="post">
+
+                        <!-- Input Fields -->
+                        <div class="col-md-6">
+
+                            <!-- Name -->
+                            <div class="form-group">
+                                <input placeholder="Name" class="form-control"
+                                       id="name" name="name" type="text"/>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <input placeholder="Email" class="form-control"
+                                       id="email" name="email" type="email"/>
+                            </div>
+
+                            <!-- Message -->
+                            <div class="form-group">
+                                <textarea placeholder="Message" class="form-control"
+                                       id="message" name="message" rows="9"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Conact Info -->
+                        <div class="col-md-6" id="contact-info">
+
+                            <!-- Title -->
+                            <span class="contact-title">Information</span>
+
+                            <!-- Description -->
+                            <span class="contact-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque nam perspiciatis voluptates. Aliquid, enim, ex facilis ipsum iure laudantium minus nob ex facilis ipsum iure laudantium minus nobis officiis perferendis provident sequi velit voluptas, voluptate voluptatem!</span>
+
+
+                            <!-- Contact Info -->
+                            <div class="contact-info">
+
+                                <!-- Address -->
+                                <div class="contact-address">
+                                    <i class="fa fa-map-marker fa-lg"></i>
+                                    <span>StreetName 163, 254 23 City</span>
+                                    <img id="arrowToMap" src="src/img/arrow.jpg" alt="arrow to map"/>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="contact-phone">
+                                    <i class="fa fa-phone fa-lg"></i>
+                                    <span>(+254) 001 454 333 66</span>
+                                </div>
+
+
+                            </div>
+
+
+                            <!-- Buttons -->
+                            <div class="contact-buttons">
+                                <button id="submit" class="pjbtn pjbtn-primary">SEND MESSAGE</button>
+                                <button id="viewmap" class="pjbtn pjbtn-inverse">VIEW MAP</button>
+                            </div>
+
+
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="color-inverse">
+        <span>&copy; Copy Right 2015 By Projex - All Right Reserved!</span>
+    </footer>
+
+</main>
+
+
+
+
+
+</div>
+
+
+<!-- JS Vendor -->
+<script src="src/vendor/js/jquery.min.js"></script>
+<script src="src/vendor/js/bootstrap.min.js"></script>
+<script src="src/vendor/js/waypoints.min.js"></script>
+
+<!-- JS Custom -->
+<script src="src/custom.js"></script>
+
+
+
+
+
+<script>
+
+    $(window).bind("load", function () {
+        console.log('Window Loaded');
+        $('#loader').remove();
+        $('html').css({ 'overflow': 'auto' });
+    });
+
+</script>
+
+
+</body>
+</html>
