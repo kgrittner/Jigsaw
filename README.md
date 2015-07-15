@@ -26,6 +26,9 @@ grunt l
 ## Extra Bells and Whistles
 
 1) Open command to Jigsaw Dir
+
 2) Run Command: grunt s
+
 3) Go To: http://localhost:9000/
+
 4) Now edit a less or html file and watch the live reload in action
