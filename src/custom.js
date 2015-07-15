@@ -133,12 +133,12 @@ var init = function(){
 
 
     return {
+        preLoader: preLoader,
         waypointsInit: waypointsInit,
         contactButtons: contactButtons,
         setHome: setHome,
         hamburger: hamburger,
-        setSlideout: setSlideout,
-        preLoader: preLoader
+        setSlideout: setSlideout
     }
 };
 
