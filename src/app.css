@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Regular.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-weight: bold;
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Bold.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Quicksand Light';
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Light.otf') format("opentype");
+}
 /* line 3, src\less\mixin\main.less */
 .body-slideout-open {
   padding-top: 0;
@@ -694,8 +707,6 @@ body {
   -moz-border-radius: 50%;
   border-radius: 50%;
   -khtml-border-radius: 50%;
-  vertical-align: middle;
-  behavior: url(less/css/PIE.htc);
 }
 /* line 37, src\less\ourTeam.less */
 .team-name {
@@ -843,36 +854,27 @@ body {
 footer {
   text-align: center;
 }
-@font-face {
-  font-family: 'Quicksand';
-  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Regular.otf') format("opentype");
-}
-@font-face {
-  font-family: 'Quicksand';
-  font-weight: bold;
-  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Bold.otf') format("opentype");
-}
-@font-face {
-  font-family: 'Quicksand Light';
-  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Light.otf') format("opentype");
-}
-/* line 49, ./src/app.less */
+/* line 36, ./src/app.less */
 body {
   position: relative;
   padding-top: 80px;
   font-family: 'Quicksand', sans-serif;
 }
-/* line 55, ./src/app.less */
+/* line 42, ./src/app.less */
 main > section {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #e8e8e8;
 }
-/* line 62, ./src/app.less */
+/* line 49, ./src/app.less */
 .color-inverse {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #ff5959;
   color: white;
+}
+/* line 56, ./src/app.less */
+.font-light {
+  font-family: 'Quicksand Light', sans-serif;
 }
 /*# sourceMappingURL=app.css.map */
