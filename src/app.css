@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Quicksand);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 /* line 3, src\less\mixin\main.less */
 .body-slideout-open {
   padding-top: 0;
@@ -186,13 +184,16 @@ body {
   position: absolute;
   top: 35%;
   left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  /* IE 9 */
+  -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
   font-size: 55px;
   font-weight: 100;
   font-family: 'Quicksand', sans-serif;
   color: white;
 }
-/* line 46, src\less\mixin\preLoader.less */
+/* line 48, src\less\mixin\preLoader.less */
 .spinner {
   margin: 0;
   display: block;
@@ -215,63 +216,64 @@ body {
   animation: spin 1.5s infinite;
 }
 @-webkit-keyframes spin {
-  /* line 69, src\less\mixin\preLoader.less */
+  /* line 71, src\less\mixin\preLoader.less */
   0%,
   100% {
     -webkit-transform: rotate(0deg) scale(1);
   }
-  /* line 70, src\less\mixin\preLoader.less */
+  /* line 72, src\less\mixin\preLoader.less */
   50% {
     -webkit-transform: rotate(720deg) scale(0.6);
   }
 }
 @-moz-keyframes spin {
-  /* line 74, src\less\mixin\preLoader.less */
+  /* line 76, src\less\mixin\preLoader.less */
   0%,
   100% {
     -moz-transform: rotate(0deg) scale(1);
   }
-  /* line 75, src\less\mixin\preLoader.less */
+  /* line 77, src\less\mixin\preLoader.less */
   50% {
     -moz-transform: rotate(720deg) scale(0.6);
   }
 }
 @-o-keyframes spin {
-  /* line 78, src\less\mixin\preLoader.less */
+  /* line 80, src\less\mixin\preLoader.less */
   0%,
   100% {
     -o-transform: rotate(0deg) scale(1);
   }
-  /* line 79, src\less\mixin\preLoader.less */
+  /* line 81, src\less\mixin\preLoader.less */
   50% {
     -o-transform: rotate(720deg) scale(0.6);
   }
 }
 @keyframes spin {
-  /* line 82, src\less\mixin\preLoader.less */
+  /* line 84, src\less\mixin\preLoader.less */
   0%,
   100% {
     transform: rotate(0deg) scale(1);
   }
-  /* line 83, src\less\mixin\preLoader.less */
+  /* line 85, src\less\mixin\preLoader.less */
   50% {
     transform: rotate(720deg) scale(0.6);
   }
 }
-/* line 6, src\less\mixin\heading.less */
+/* line 7, src\less\mixin\heading.less */
 .heading {
   text-align: center;
   font-size: 26px;
+  font-family: 'Quicksand', sans-serif;
   color: black;
   padding: 0px 0px 19px 0px;
 }
-/* line 13, src\less\mixin\heading.less */
+/* line 15, src\less\mixin\heading.less */
 .heading-line {
   text-align: center;
   height: 10px;
   margin: -12px 0 auto;
 }
-/* line 19, src\less\mixin\heading.less */
+/* line 21, src\less\mixin\heading.less */
 .heading-circle {
   border-radius: 50%;
   width: 6px;
@@ -280,11 +282,11 @@ body {
   margin-right: 4px;
   background-color: black;
 }
-/* line 30, src\less\mixin\heading.less */
+/* line 32, src\less\mixin\heading.less */
 .heading-line span {
   display: inline-block;
 }
-/* line 34, src\less\mixin\heading.less */
+/* line 36, src\less\mixin\heading.less */
 .heading-line span:nth-child(1),
 .heading-line span:nth-child(3) {
   width: 140px;
@@ -293,31 +295,31 @@ body {
   box-shadow: 1px 1px 1px #cccaca;
 }
 @media (max-width: 360px) {
-  /* line 42, src\less\mixin\heading.less */
+  /* line 44, src\less\mixin\heading.less */
   .heading-line span:nth-child(1),
   .heading-line span:nth-child(3) {
     width: 100px;
   }
-  /* line 46, src\less\mixin\heading.less */
+  /* line 48, src\less\mixin\heading.less */
   .heading {
     font-size: 23px;
   }
-  /* line 50, src\less\mixin\heading.less */
+  /* line 52, src\less\mixin\heading.less */
   .heading-line {
     margin: -10px 0 auto;
   }
 }
 @media (max-width: 280px) {
-  /* line 57, src\less\mixin\heading.less */
+  /* line 59, src\less\mixin\heading.less */
   .heading-line span:nth-child(1),
   .heading-line span:nth-child(3) {
     width: 80px;
   }
-  /* line 61, src\less\mixin\heading.less */
+  /* line 63, src\less\mixin\heading.less */
   .heading {
     font-size: 18px;
   }
-  /* line 65, src\less\mixin\heading.less */
+  /* line 67, src\less\mixin\heading.less */
   .heading-circle {
     width: 5px;
     height: 5px;
@@ -372,13 +374,13 @@ body {
   color: #ffffff;
   font-family: 'Quicksand', sans-serif;
 }
-/* line 25, src\less\header.less */
+/* line 24, src\less\header.less */
 #header > div {
   position: relative;
   padding-top: 0px;
   padding-bottom: 40px;
 }
-/* line 35, src\less\header.less */
+/* line 34, src\less\header.less */
 #logo-container {
   position: relative;
   margin-top: 22px;
@@ -386,28 +388,33 @@ body {
   height: 43px;
   width: 200px;
 }
-/* line 45, src\less\header.less */
+/* line 44, src\less\header.less */
 #logo-img {
   position: absolute;
   left: 25px;
   top: 4px;
   height: 17px;
 }
-/* line 52, src\less\header.less */
+/* line 51, src\less\header.less */
 #logo-title {
   position: absolute;
   left: 46px;
   top: -5px;
   font-size: 25px;
 }
-/* line 59, src\less\header.less */
+/* line 58, src\less\header.less */
+#logo-title-light {
+  font-family: 'Quicksand Light', sans-serif;
+  font-weight: lighter;
+}
+/* line 63, src\less\header.less */
 #logo-slogan {
   position: absolute;
   left: 12px;
   top: 20px;
   font-size: 10px;
 }
-/* line 70, src\less\header.less */
+/* line 74, src\less\header.less */
 #nav {
   position: relative;
   margin-top: 32px;
@@ -415,37 +422,36 @@ body {
   height: 23px;
   width: 499px;
 }
-/* line 80, src\less\header.less */
+/* line 84, src\less\header.less */
 #nav > ul {
   list-style-type: none;
   font-size: 12px;
-  font-weight: bold;
 }
-/* line 86, src\less\header.less */
+/* line 89, src\less\header.less */
 #nav > ul > li {
   display: inline;
   margin-right: 30px;
 }
-/* line 91, src\less\header.less */
+/* line 94, src\less\header.less */
 #nav > ul > li > a {
   text-decoration: none;
   color: white;
 }
-/* line 96, src\less\header.less */
+/* line 99, src\less\header.less */
 #nav > ul > li a.active {
   border-bottom: 1px solid;
 }
-/* line 100, src\less\header.less */
+/* line 103, src\less\header.less */
 #nav > ul > li:last-child {
   display: inline;
   margin-right: 0px;
 }
-/* line 105, src\less\header.less */
+/* line 108, src\less\header.less */
 #nav > ul > li:hover {
   cursor: pointer;
   border-bottom: 1px solid;
 }
-/* line 113, src\less\header.less */
+/* line 116, src\less\header.less */
 #navHamburger {
   display: none;
   position: absolute;
@@ -453,11 +459,11 @@ body {
   right: 25px;
 }
 @media (max-width: 746px) {
-  /* line 123, src\less\header.less */
+  /* line 126, src\less\header.less */
   #nav {
     display: none;
   }
-  /* line 127, src\less\header.less */
+  /* line 130, src\less\header.less */
   #navHamburger {
     display: block;
   }
@@ -471,47 +477,51 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
   height: 240px;
   width: 100%;
 }
-/* line 19, src\less\home.less */
+/* line 23, src\less\home.less */
 #home-content > div {
   width: 915px;
   height: 100%;
   margin: auto;
 }
-/* line 28, src\less\home.less */
+/* line 32, src\less\home.less */
 #home-content-container {
   width: 800px;
   height: 100%;
 }
-/* line 34, src\less\home.less */
+/* line 38, src\less\home.less */
 #home-left {
   float: left;
   width: 450px;
 }
-/* line 40, src\less\home.less */
+/* line 44, src\less\home.less */
 #home-right {
   float: left;
   width: 445px;
 }
-/* line 47, src\less\home.less */
+/* line 51, src\less\home.less */
 #home-right img {
   height: 240px;
 }
-/* line 53, src\less\home.less */
+/* line 57, src\less\home.less */
 #home-left span {
   display: block;
 }
-/* line 56, src\less\home.less */
+/* line 60, src\less\home.less */
 #home-left > span:first-child {
   color: white;
   font-size: 65px;
   font-weight: bold;
   font-family: 'Droid Sans', sans-serif;
 }
-/* line 62, src\less\home.less */
+/* line 66, src\less\home.less */
 #home-left > span:nth-child(2) {
   color: white;
   font-size: 28px;
@@ -520,7 +530,7 @@ body {
   margin-top: -15px;
   margin-left: 5px;
 }
-/* line 70, src\less\home.less */
+/* line 74, src\less\home.less */
 #home-left > span:nth-child(3) {
   color: #bebdbd;
   font-size: 12px;
@@ -528,96 +538,96 @@ body {
   margin-top: 25px;
   margin-left: 0px;
 }
-/* line 78, src\less\home.less */
+/* line 82, src\less\home.less */
 #home-left .pjbtn-inverse {
   color: white;
 }
-/* line 81, src\less\home.less */
+/* line 85, src\less\home.less */
 #home-left .pjbtn-primary {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 87, src\less\home.less */
+/* line 91, src\less\home.less */
 #home-buttons button {
   display: inline-block;
   margin-top: 25px;
 }
-/* line 91, src\less\home.less */
+/* line 95, src\less\home.less */
 #home-buttons button:last-child {
   margin-left: 10px;
 }
 @media (max-width: 1000px) {
-  /* line 99, src\less\home.less */
+  /* line 103, src\less\home.less */
   #home-right {
     width: 281px;
   }
-  /* line 103, src\less\home.less */
+  /* line 107, src\less\home.less */
   #home-right > img {
     height: 150px;
   }
-  /* line 107, src\less\home.less */
+  /* line 111, src\less\home.less */
   #home-content > div {
     width: 755px;
   }
-  /* line 111, src\less\home.less */
+  /* line 115, src\less\home.less */
   #home-left > span:first-child {
     font-size: 46px;
   }
-  /* line 115, src\less\home.less */
+  /* line 119, src\less\home.less */
   #home-left > span:nth-child(2) {
     font-size: 20px;
   }
-  /* line 119, src\less\home.less */
+  /* line 123, src\less\home.less */
   #home-left > span:nth-child(3) {
     margin-top: 8px;
   }
 }
 @media (max-width: 820px) {
-  /* line 127, src\less\home.less */
+  /* line 131, src\less\home.less */
   #home-right {
     width: 281px;
     display: none;
   }
-  /* line 132, src\less\home.less */
+  /* line 136, src\less\home.less */
   #home-left {
     float: none;
     margin: auto;
     width: 308px;
   }
-  /* line 138, src\less\home.less */
+  /* line 142, src\less\home.less */
   #home-spacer {
     display: none;
   }
-  /* line 142, src\less\home.less */
+  /* line 146, src\less\home.less */
   #home-content > div {
     width: 100%;
   }
 }
 @media (max-width: 820px) {
-  /* line 151, src\less\home.less */
+  /* line 155, src\less\home.less */
   #home-buttons {
     display: none;
   }
-  /* line 155, src\less\home.less */
+  /* line 159, src\less\home.less */
   #home-content {
     height: 133px;
   }
 }
 @media (max-width: 460px) {
-  /* line 165, src\less\home.less */
+  /* line 169, src\less\home.less */
   #home-left > span:nth-child(3) {
     display: none;
   }
-  /* line 169, src\less\home.less */
+  /* line 173, src\less\home.less */
   #home-content {
     height: 86px;
     text-align: center;
   }
-  /* line 174, src\less\home.less */
+  /* line 178, src\less\home.less */
   #home-content > div {
     width: 100%;
   }
-  /* line 178, src\less\home.less */
+  /* line 182, src\less\home.less */
   #home-left {
     width: 100%;
   }
@@ -667,45 +677,55 @@ body {
 .team-container span {
   display: block;
 }
-/* line 18, src\less\ourTeam.less */
+/* line 16, src\less\ourTeam.less */
+.team-img-container {
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border: solid #ff5959 2px;
+}
+/* line 25, src\less\ourTeam.less */
 .team-img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border: solid #ff5959 2px;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
+  vertical-align: middle;
+  behavior: url(less/css/PIE.htc);
 }
-/* line 27, src\less\ourTeam.less */
+/* line 37, src\less\ourTeam.less */
 .team-name {
   font-size: 20px;
   font-weight: bold;
   padding-top: 5px;
 }
-/* line 33, src\less\ourTeam.less */
+/* line 43, src\less\ourTeam.less */
 .team-job {
   font-size: small;
   padding-top: 0px;
   margin-top: -5px;
   color: black;
 }
-/* line 40, src\less\ourTeam.less */
+/* line 50, src\less\ourTeam.less */
 .team-text {
   padding-top: 10px;
   font-size: 12px;
-  font-weight: bold;
 }
-/* line 46, src\less\ourTeam.less */
+/* line 55, src\less\ourTeam.less */
 .team-social a {
   display: inline-block;
   margin-top: 7px;
   margin-right: 8px;
 }
-/* line 52, src\less\ourTeam.less */
+/* line 61, src\less\ourTeam.less */
 .team-social a:last-child {
   margin-right: 0px;
 }
-/* line 56, src\less\ourTeam.less */
+/* line 65, src\less\ourTeam.less */
 .team-social a > img {
   height: 23px;
 }
@@ -823,19 +843,32 @@ body {
 footer {
   text-align: center;
 }
-/* line 27, ./src/app.less */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Regular.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Quicksand';
+  font-weight: bold;
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Bold.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Quicksand Light';
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Light.otf') format("opentype");
+}
+/* line 49, ./src/app.less */
 body {
   position: relative;
   padding-top: 80px;
   font-family: 'Quicksand', sans-serif;
 }
-/* line 33, ./src/app.less */
+/* line 55, ./src/app.less */
 main > section {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #e8e8e8;
 }
-/* line 40, ./src/app.less */
+/* line 62, ./src/app.less */
 .color-inverse {
   padding-top: 40px;
   padding-bottom: 40px;

@@ -13,15 +13,25 @@
   display: block;
 }
 
-
+.team-img-container {
+  display: inline-block;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
+  border: solid @primary-color 2px;
+}
 
 .team-img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border: solid @primary-color 2px;
+  border-radius: 50%;
+  -khtml-border-radius: 50%;
+  vertical-align: middle;
+  behavior: url(css/PIE.htc);
+
 }
 
 .team-name {
@@ -40,7 +50,6 @@
 .team-text {
   padding-top: 10px;
   font-size: 12px;
-  font-weight: bold;
 }
 
 .team-social a {

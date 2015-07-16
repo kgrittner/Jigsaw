@@ -1,6 +1,8 @@
 
-@import url(http://fonts.googleapis.com/css?family=Quicksand);
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+//@import url(http://fonts.googleapis.com/css?family=Quicksand);
+//@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+
 @import 'less/mixin/main';
 @import 'less/mixin/navSlideout';
 @import 'less/mixin/preLoader';
@@ -17,10 +19,29 @@
 @import 'less/contact';
 @import 'less/footer';
 
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Regular.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Quicksand';
+  font-weight: bold;
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Bold.otf') format("opentype");
+}
+
+@font-face {
+  font-family: 'Quicksand Light';
+  src: url('http://localhost:63342/Jigsaw/src/vendor/fonts/Quicksand-Light.otf') format("opentype");
+}
+
+
 //Vars
 @primary-color: #ff5959;
 @primary-gray: #e8e8e8;
 @primary-font: 'Quicksand', sans-serif;
+@primary-font-light: 'Quicksand Light', sans-serif;
 @secondary-font: 'Droid Sans', sans-serif;
 
 
