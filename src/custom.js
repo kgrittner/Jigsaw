@@ -11,9 +11,6 @@ var init = function(){
 
     var waypointsInit = function() {
 
-        function getRelatedContent(el){
-            return $($(el).attr('href'));
-        }
 
         // Get link by section or article id
         function getRelatedNavigation(el){
@@ -27,13 +24,21 @@ var init = function(){
             }
         }
 
+        function scrollTo(id, addPound) {
+
+            if(addPound) { id = '#' + id; };
+            $('html,body').animate({scrollTop: $(id).offset().top - 73}, 'slow')
+            $('html,body').animate({scrollTop: $(id).offset().top - 79}, 'fast')
+        };
+
 
         $('section')
             .waypoint(function() {
                 getRelatedNavigation(this).addClass('active');
             }, {
                 offset: 75
-        });
+            }
+        );
 
         $('footer')
             .waypoint(function(){
@@ -44,10 +49,17 @@ var init = function(){
         );
 
 
+        $('[data-scrollToId]').on('click',function(e) {
+            e.preventDefault();
+            var id = $(this).attr('data-scrollToId');
+            scrollTo(id, true);
+        });
+
+
         $('nav a').on('click',function(e) {
             e.preventDefault();
-            $('html,body').animate({scrollTop: getRelatedContent(this).offset().top - 73}, 'slow')
-            $('html,body').animate({scrollTop: getRelatedContent(this).offset().top - 79}, 'fast')
+            var id = $(this).attr('href');
+            scrollTo(id);
         });
 
     }
