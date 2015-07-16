@@ -7,6 +7,10 @@
     <meta name="HandheldFriendly" content="True">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+
 
     <title>Jigsaw Sample</title>
     <link rel="stylesheet" href="src/vendor/css/bootstrap.min.css"/>
@@ -18,7 +22,7 @@
     <!--<link href='src/vendor/fonts/Quicksand-Regular.otf' rel='stylesheet' type='text/css'>-->
 
 </head>
-<body >
+<body>
 
 
 <!--Pre Loader Spinner-->
@@ -123,7 +127,7 @@
 
                     <!-- HTML5 -->
                     <div class="col-md-4 service-center">
-                        <img class="img-responsive" src="src/img/lightbulb.png" alt="Html5 and CSS3"/>
+                        <img class="img-responsive center-block" src="src/img/lightbulb.png" alt="Html5 and CSS3"/>
                         <span class="service-title">HTML 5 &amp; CSS3</span>
                         <span class="service-text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam eaque eligendi minus natus nesciunt, non porro quis quod sit tenetur veniam. Deserunt in, laudantium nobis quidem repudiandae rerum!
@@ -131,7 +135,7 @@
                     </div>
 
                     <div class="col-md-4 service-center">
-                        <img class="img-responsive" src="src/img/seo.png" alt="SEO"/>
+                        <img class="img-responsive center-block" src="src/img/seo.png" alt="SEO"/>
                         <span class="service-title">SEO Optimization</span>
                         <span class="service-text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam eaque eligendi minus natus nesciunt, non porro quis quod sit tenetur veniam. Deserunt in, laudantium nobis quidem repudiandae rerum!
@@ -139,7 +143,7 @@
                     </div>
 
                     <div class="col-md-4 service-center">
-                        <img class="img-responsive" src="src/img/graphicDesign.png" alt="Graphic Design"/>
+                        <img class="img-responsive center-block" src="src/img/graphicDesign.png" alt="Graphic Design"/>
                         <span class="service-title">Graphic Design</span>
                         <span class="service-text">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid aperiam eaque eligendi minus natus nesciunt, non porro quis quod sit tenetur veniam. Deserunt in, laudantium nobis quidem repudiandae rerum!
@@ -233,7 +237,9 @@
                         <div class="team-img-container">
                             <img class="team-img img-responsive" src="src/img/norris.jpg" alt="Chuck Norris"/>
                         </div>
+
                         <span class="team-name">George Sjostedt</span>
+
                         <span class="team-job">CEO / Founder</span>
                         <span class="team-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa eaque earum illum in ipsum laudantium magni maiores.</span>
 
@@ -541,18 +547,6 @@
 <script src="src/custom.js"></script>
 
 
-
-
-
-<script>
-
-    $(window).bind("load", function () {
-        console.log('Window Loaded');
-        $('#loader').remove();
-        $('html').css({ 'overflow': 'auto' });
-    });
-
-</script>
 
 
 </body>

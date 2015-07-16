@@ -649,24 +649,25 @@ body {
 #navServices .container > .row {
   padding-bottom: 90px;
 }
-/* line 13, src\less\ourServices.less */
+/* line 11, src\less\ourServices.less */
 .service-center {
   padding-top: 50px;
-  text-align: -webkit-center !important;
 }
-/* line 20, src\less\ourServices.less */
+/* line 18, src\less\ourServices.less */
 .service-center .service-title {
   display: block;
-  text-align: center;
+  text-align: center !important;
   font-size: 19px;
   margin-top: 8px;
   margin-bottom: 8px;
   font-weight: bold;
 }
-/* line 29, src\less\ourServices.less */
+/* line 27, src\less\ourServices.less */
 .service-center .service-text {
+  display: block;
   font-size: small;
   color: black;
+  text-align: center !important;
 }
 /* line 2, src\less\portfolio.less */
 #navPortfolio {
@@ -684,13 +685,12 @@ body {
 /* line 7, src\less\ourTeam.less */
 .team-container {
   padding-top: 40px;
-  text-align: -webkit-center !important;
 }
 /* line 12, src\less\ourTeam.less */
 .team-container span {
   display: block;
 }
-/* line 16, src\less\ourTeam.less */
+/* line 17, src\less\ourTeam.less */
 .team-img-container {
   display: inline-block;
   -webkit-border-radius: 50%;
@@ -699,7 +699,7 @@ body {
   -khtml-border-radius: 50%;
   border: solid #ff5959 2px;
 }
-/* line 25, src\less\ourTeam.less */
+/* line 26, src\less\ourTeam.less */
 .team-img {
   width: 200px;
   height: 200px;
@@ -708,35 +708,43 @@ body {
   border-radius: 50%;
   -khtml-border-radius: 50%;
 }
-/* line 37, src\less\ourTeam.less */
+/* line 38, src\less\ourTeam.less */
+.team-name,
+.team-job,
+.team-text,
+.team-social {
+  text-align: -webkit-center !important;
+  text-align: center !important;
+}
+/* line 43, src\less\ourTeam.less */
 .team-name {
   font-size: 20px;
   font-weight: bold;
   padding-top: 5px;
 }
-/* line 43, src\less\ourTeam.less */
+/* line 50, src\less\ourTeam.less */
 .team-job {
   font-size: small;
   padding-top: 0px;
   margin-top: -5px;
   color: black;
 }
-/* line 50, src\less\ourTeam.less */
+/* line 57, src\less\ourTeam.less */
 .team-text {
   padding-top: 10px;
   font-size: 12px;
 }
-/* line 55, src\less\ourTeam.less */
+/* line 63, src\less\ourTeam.less */
 .team-social a {
   display: inline-block;
   margin-top: 7px;
   margin-right: 8px;
 }
-/* line 61, src\less\ourTeam.less */
+/* line 69, src\less\ourTeam.less */
 .team-social a:last-child {
   margin-right: 0px;
 }
-/* line 65, src\less\ourTeam.less */
+/* line 73, src\less\ourTeam.less */
 .team-social a > img {
   height: 23px;
 }
